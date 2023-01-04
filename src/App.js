@@ -1,5 +1,5 @@
 
-import { useEffect, useState, useCallback } from 'react';
+import { useState,  } from 'react';
 import { ethers } from 'ethers';
 import './App.css';
 
@@ -38,7 +38,7 @@ function App() {
         // The MetaMask plugin also allows signing transactions to
         // send ether and pay to change state within the blockchain.
         // For this, you need the account signer...
-        const signer = provider.getSigner();
+        // const signer = provider.getSigner();
         const bal = await provider.getBalance(accounts[0]);
         setWalletBal(bal)
         accountChangedHandler(accounts)
